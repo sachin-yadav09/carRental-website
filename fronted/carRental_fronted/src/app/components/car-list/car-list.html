@@ -1,0 +1,15 @@
+<div class="car-list-page">
+  <h2 class="page-title">Available Cars</h2>
+
+  <div class="car-grid">
+    <div class="car-card" *ngFor="let car of cars">
+      <img [src]="car.image" [alt]="car.name" class="car-image" />
+
+      <div class="car-details">
+        <h3>{{ car.name }}</h3>
+        <p>{{ car.description }}</p>
+        <a [routerLink]="['/cars', car.id]" class="details-btn">View Details</a>
+      </div>
+    </div>
+  </div>
+</div>

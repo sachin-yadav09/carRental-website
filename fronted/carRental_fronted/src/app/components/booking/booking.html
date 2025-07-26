@@ -1,0 +1,30 @@
+<!-- booking.html -->
+<div class="booking-page">
+  <h2>Book {{ car.name }}</h2>
+
+  <form class="booking-form">
+    <label>Your Name:</label>
+    <input type="text" [(ngModel)]="userName" name="userName" required />
+
+    <label>Booking Type:</label>
+    <select [(ngModel)]="bookingType" name="type" (change)="calculatePrice()">
+      <option value="hour">Per Hour</option>
+      <option value="day">Per Day</option>
+    </select>
+
+    <label>Quantity ({{ bookingType === 'hour' ? 'Hours' : 'Days' }}):</label>
+    <input type="number" [(ngModel)]="quantity" name="qty" min="1" (input)="calculatePrice()" required />
+
+    <label>Start Date & Time:</label>
+    <input type="datetime-local" [(ngModel)]="startDate" name="start" required />
+
+    <label>End Date & Time:</label>
+    <input type="datetime-local" [(ngModel)]="endDate" name="end" required />
+
+    <div class="total">
+      <p>Total Price: ₹{{ totalPrice }}</p>
+    </div>
+
+    <button type="button" class="btn" (click)="bookNow()">Confirm Booking</button>
+  </form>
+</div>

@@ -1,0 +1,70 @@
+.carousel-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.carousel-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: carousel 24s infinite;
+  z-index: -1;
+  filter: brightness(0.5);
+}
+
+.carousel-overlay {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.carousel-overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
+
+/* 🔁 Carousel Keyframes */
+@keyframes carousel {
+  0%, 20% {
+    background-image: url('/assets/image_1.webp');
+  }
+  25%, 45% {
+    background-image: url('/assets/image_2.webp');
+  }
+  50%, 70% {
+    background-image: url('/assets/image_3.webp');
+  }
+  75%, 95% {
+    background-image: url('/assets/image_4.webp');
+  }
+  100% {
+    background-image: url('/assets/image_5.webp');
+  }
+}
