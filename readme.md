@@ -46,4 +46,3 @@ backend/ → carRental_backend
 4. Install the dependencies
 5. Run the server
 6. Access the website
-7. Enjoy!
