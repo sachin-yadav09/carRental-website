@@ -1,17 +1,24 @@
 # Car Rental Website 🚗
 
-A full-stack car rental website with:
+A full-stack Car Rental Website developed with:
 
-- Frontend: Angular
-- Backend: Django (REST API)
-- Database: MySQL
+- 🖥️ **Frontend**: Angular  
+- 🛠️ **Backend**: Django (REST API)  
+- 💾 **Database**: MySQL  
+
+---
 
 ## 📝 Features
-- Car details
-- User login/signup
-- Car booking 
+
+- 🚘 Car Listings & Booking  
+- 🔐 User Authentication (Login/Signup)  
+- 📄 Car Details & About Page  
+- 📦 RESTful API Integration  
+
+---
 
 ## 📸 Screenshots
+
 ### 🔹 Homepage
 ![Homepage](images/Home_page.png)
 
@@ -27,22 +34,44 @@ A full-stack car rental website with:
 ### 🔹 Signup Page
 ![Signup](images/SignUp_page.png)
 
-## 📂 Folder Structure
-frontend/ → carRental_fronted
+---
 
+## 📂 Folder Structure
+frontend/ → carRental_frontend  
 backend/ → carRental_backend
 
-## 📝 Requirements
-- Python 3.x
-- Django 3.x
-- MySQL
-- Angular 10.x
-- Django REST Framework
+---
 
-## 💻 How to run
-1. Install the requirements
-2. Create a virtual environment
-3. Activate the virtual environment
-4. Install the dependencies
-5. Run the server
-6. Access the website
+## 🛠️ Requirements
+
+- Python 3.x  
+- Django 3.x  
+- Django REST Framework  
+- Angular CLI  
+- MySQL  
+
+---
+
+## 💻 How to Run
+
+### 🔧 Backend (Django)
+
+```bash
+cd backend/carRental_backend
+python -m venv env
+# Windows:
+env\Scripts\activate
+# macOS/Linux:
+source env/bin/activate
+
+pip install -r requirements.txt
+
+# Create .env file and add your DB credentials
+
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+
+cd frontend/carRental_frontend
+npm install
+ng serve
