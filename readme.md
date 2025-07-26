@@ -13,7 +13,7 @@ A full-stack car rental website with:
 
 ## 📸 Screenshots
 ### 🔹 Homepage
-![Homepage](images/homepage.png)
+![Homepage](images/Home_page.png)
 
 ### 🔹 Cars Page
 ![Cars](images/Cars_details.png)
@@ -25,7 +25,7 @@ A full-stack car rental website with:
 ![Login](images/Login_page.png)
 
 ### 🔹 Signup Page
-![Signup](images/Sign Up_page.png)
+![Signup](images/SignUp_page.png)
 
 ## 📂 Folder Structure
 frontend/ → carRental_fronted
